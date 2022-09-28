@@ -6,7 +6,7 @@ app = application
 def index():
     return 'Hello there. From Python.'
 
-@app.route('/<celsius>')     # must have different route or FIFO takes place
+@app.route('/<int:celsius>')     # must have different route or FIFO takes place
 def fahrenheit_from(celsius):
     """Convert Celsius to Fahrenheit degrees."""
     try:
