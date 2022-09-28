@@ -8,7 +8,7 @@ app = application
 def index():
     celsius = request.args.get("celsius", "")
     if celsius:
-        farhenheit = fahrenheit_from(celsius)
+        fahrenheit = fahrenheit_from(celsius)
     else:
         fahrenheit = ""
     return (
